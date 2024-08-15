@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show-Hide Text</title>
+    <style>
+    
+        .myText {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="hideText()">Hidden Text</button>
+    <div class="myText">
+        This is the hidden text block. Click the button to hide it!
+    </div>
+
+    <script>
+        function hideText() {
+            const textBlock = document.querySelector(".myText");
+            if (textBlock.style.display === "none") {
+                textBlock.style.display = "block"; // Show the text
+            } else {
+                textBlock.style.display = "none"; // Hide the text
+            }
+        }
+    </script>
+</body>
+</html>
